@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iryna Vorobchuk — UX/UI designer</title>
+  <meta name="description" content="UX/UI designer who designs in Figma and builds what she designs: apps, landings and websites.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <a href="#top" class="brand">Iryna Vorobchuk</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+  </header>
+
+  <nav class="menu" id="menu" hidden>
+    <a href="#work"><span class="mono">01</span>Work</a>
+    <a href="#about"><span class="mono">02</span>About</a>
+    <a href="#contact"><span class="mono">03</span>Contact</a>
+  </nav>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="eyebrow reveal">Portfolio — 2026</p>
+      <h1 class="display reveal-words">Iryna Vorobchuk</h1>
+      <p class="lead reveal">UX/UI designer. I design in Figma and then build what I design, so the apps, landings and websites in my portfolio are real and clickable, not just mockups.</p>
+      <div class="actions reveal">
+        <a class="btn btn-dark" href="#contact">Start a project <span class="arr">↗</span></a>
+        <a class="btn btn-line" href="#work">See the work <span class="arr">↗</span></a>
+      </div>
+    </section>
+
+    <section class="work wrap" id="work">
+      <p class="eyebrow reveal">(01) Selected work</p>
+      <h2 class="title reveal-words">Recent <em>projects</em></h2>
+
+      <div class="grid">
+        <a class="card reveal" href="https://github.com/iravorobchuk3004/4-paws" target="_blank" rel="noopener">
+          <div class="shot"><img src="img/hoomie.jpg" alt="Hoomie app screens on a purple background" loading="lazy"></div>
+          <div class="meta mono"><span>Mobile app</span><span>iOS · Android</span></div>
+          <h3>Hoomie <span class="arr">↗</span></h3>
+          <p>Pet adoption from shelters, matched to your lifestyle. Designed in Figma, built in React Native with Expo.</p>
+        </a>
+
+        <a class="card reveal" href="https://iravorobchuk3004.github.io/uahub-redesign/" target="_blank" rel="noopener">
+          <div class="shot"><img src="img/uahub.jpg" alt="UAHUB home page with search and specialist avatars" loading="lazy"></div>
+          <div class="meta mono"><span>Redesign</span><span>Web · Marketplace</span></div>
+          <h3>UAHUB <span class="arr">↗</span></h3>
+          <p>A marketplace of Ukrainian specialists in Spain, rebuilt as a calm, searchable catalog with a map and booking.</p>
+        </a>
+
+        <a class="card reveal" href="https://iravorobchuk3004.github.io/port273/" target="_blank" rel="noopener">
+          <div class="shot dark"><img src="img/port273.jpg" alt="PORT°273 landing with large red wordmark" loading="lazy"></div>
+          <div class="meta mono"><span>Landing + booking</span><span>Web · Venue</span></div>
+          <h3>PORT°273 <span class="arr">↗</span></h3>
+          <p>An industrial culture venue in Kyiv: spaces, events and a four-step flow to book a space.</p>
+        </a>
+
+        <a class="card reveal" href="https://holos-site-tau.vercel.app" target="_blank" rel="noopener">
+          <div class="shot"><img src="img/holos.jpg" alt="HOLOS agency site with wine-red serif wordmark" loading="lazy"></div>
+          <div class="meta mono"><span>Agency website</span><span>Web · Live client</span></div>
+          <h3>HOLOS <span class="arr">↗</span></h3>
+          <p>A site for an SMM and content agency, with a booking form that lands straight in the team's Telegram.</p>
+        </a>
+      </div>
+    </section>
+
+    <section class="about wrap" id="about">
+      <p class="eyebrow reveal">(02) About</p>
+      <h2 class="title reveal-words">Design and code, <em>one person to talk to.</em></h2>
+      <div class="split">
+        <p class="body reveal">I take a project from the first question to a working build: research, flows and screens in Figma, then the real thing in code. The person who designs it is the person who ships it, so nothing gets lost between the mockup and the browser.</p>
+        <dl class="facts">
+          <div class="reveal"><dt class="mono">Focus</dt><dd>UX/UI, product and web design</dd></div>
+          <div class="reveal"><dt class="mono">Tools</dt><dd>Figma, HTML/CSS/JS, React Native (Expo)</dd></div>
+          <div class="reveal"><dt class="mono">Work</dt><dd>Mobile apps, landings, agency and product websites</dd></div>
+          <div class="reveal"><dt class="mono">Open to</dt><dd>New projects and product design roles</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact">
+      <p class="eyebrow reveal">(03) Contact</p>
+      <h2 class="title reveal-words">Let's make <em>something good.</em></h2>
+      <div class="split">
+        <dl class="facts">
+          <div class="reveal"><dt class="mono">Email</dt><dd><a href="mailto:iravorobchuk@gmail.com">iravorobchuk@gmail.com</a></dd></div>
+          <div class="reveal"><dt class="mono">GitHub</dt><dd><a href="https://github.com/iravorobchuk3004" target="_blank" rel="noopener">iravorobchuk3004</a></dd></div>
+          <div class="reveal"><dt class="mono">Reply time</dt><dd>Within two working days</dd></div>
+        </dl>
+
+        <form class="form reveal" id="form">
+          <div class="row">
+            <label><span class="mono">Your name</span><input name="name" placeholder="Jane Cooper" required></label>
+            <label><span class="mono">Email</span><input name="email" type="email" placeholder="jane@company.com" required></label>
+          </div>
+          <label><span class="mono">Company</span><input name="company" placeholder="Optional"></label>
+          <label><span class="mono">What do you need?</span>
+            <select name="need">
+              <option>Mobile app</option>
+              <option>Website or landing</option>
+              <option>Redesign</option>
+              <option>UX/UI audit</option>
+              <option>A designer on the team</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label><span class="mono">Tell me about the project</span><textarea name="message" rows="5" placeholder="What are you making, who is it for, and when does it need to be ready?"></textarea></label>
+          <button class="btn btn-dark" type="submit">Send message <span class="arr">↗</span></button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p class="eyebrow">Have a project in mind? Write to me.</p>
+    <a class="big-mail" href="mailto:iravorobchuk@gmail.com">iravorobchuk@gmail.com</a>
+    <div class="socials">
+      <a href="https://github.com/iravorobchuk3004" target="_blank" rel="noopener">GitHub</a>
+      <a href="#work">Work</a>
+      <a href="#top">Back to top</a>
+    </div>
+    <p class="small">© 2026 Iryna Vorobchuk</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
