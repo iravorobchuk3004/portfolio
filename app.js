@@ -58,5 +58,5 @@ document.getElementById('form').addEventListener('submit', (e) => {
     `${d.get('name')}${d.get('company') ? `, ${d.get('company')}` : ''}`,
     d.get('email'),
   ].join('\n');
-  location.href = `mailto:iravorobchuk@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  location.href = `mailto:iryna.webdesign@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 });
