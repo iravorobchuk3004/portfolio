@@ -173,21 +173,6 @@ section.wrap { padding-top: 160px; scroll-margin-top: -64px; }
 .hero-bottom a { white-space: nowrap; }
 .dotted { border-bottom: 1px dotted var(--ink); }
 
-.hero-card {
-  position: absolute; right: var(--gutter); bottom: 28px; z-index: 3;
-  display: flex; gap: 16px; width: min(380px, calc(100% - var(--seam) - var(--gutter) * 2));
-  padding: 12px; border-radius: 14px;
-  background: rgba(18, 18, 18, 0.62); color: #fff;
-  backdrop-filter: blur(18px); -webkit-backdrop-filter: blur(18px);
-  animation: rise 1s 0.6s var(--ease) both;
-  transition: transform 0.3s var(--ease);
-}
-.hero-card:hover { transform: translateY(-3px); }
-.hero-card img { width: 120px; height: 104px; object-fit: cover; border-radius: 8px; flex: none; }
-.hero-card div { display: flex; flex-direction: column; gap: 10px; padding: 4px 4px 0 0; }
-.hero-card-top { display: flex; justify-content: space-between; font-size: 18px; font-weight: 500; letter-spacing: -0.02em; }
-.hero-card-arr { display: grid; place-items: center; width: 26px; height: 26px; border: 1px solid rgba(255,255,255,0.6); border-radius: 50%; font-size: 12px; }
-.hero-card-text { font-size: 13px; line-height: 1.4; color: rgba(255, 255, 255, 0.82); }
 
 /* Fixed header only shows once the hero has scrolled away */
 .top { transition: opacity 0.3s, transform 0.3s; }
@@ -268,7 +253,6 @@ body:not(.past-hero):not(.menu-open) .top { opacity: 0; transform: translateY(-1
   .hero-name-in { left: 50%; top: var(--seam); transform: translate(-50%, -66%); }
   .on-photo .name { color: #fff; text-shadow: 0 2px 28px rgba(0, 0, 0, 0.35); }
   .hero-mark { border: 0; background: rgba(255, 255, 255, 0.6); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
-  .hero-card { display: none; }
   .hero-foot { left: var(--gutter); right: var(--gutter); width: auto; }
   .contact .facts { order: 0; }
 }
