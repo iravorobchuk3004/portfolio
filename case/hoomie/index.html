@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hoomie — case study · Iryna Vorobchuk</title>
+  <meta name="description" content="Hoomie, a pet adoption app designed in Figma and built in React Native: case study and presentation.">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css?v=11">
+</head>
+<body class="case-page past-hero">
+  <header class="top">
+    <a href="../../" class="brand">Iryna Vorobchuk</a>
+    <a href="../../#work" class="menu-btn">All work</a>
+  </header>
+
+  <main>
+    <section class="case-hero wrap">
+      <p class="eyebrow reveal">Case study — Mobile app · 2026</p>
+      <h1 class="display reveal-words">Hoomie</h1>
+      <p class="lead reveal">A pet adoption app that matches people with shelter animals by how they live, lets them help with a donation, or report a pet they found.</p>
+      <div class="actions reveal">
+        <a class="btn btn-dark" href="#film">Watch the presentation <span class="arr">↓</span></a>
+        <a class="btn btn-line" href="https://github.com/iravorobchuk3004/4-paws" target="_blank" rel="noopener">Code on GitHub <span class="arr">↗</span></a>
+      </div>
+
+      <dl class="case-meta reveal">
+        <div><dt class="mono">Role</dt><dd>UX/UI design and development</dd></div>
+        <div><dt class="mono">Platform</dt><dd>iOS and Android</dd></div>
+        <div><dt class="mono">Tools</dt><dd>Figma, Expo, React Native</dd></div>
+        <div><dt class="mono">Working title</dt><dd>4 Paws</dd></div>
+      </dl>
+    </section>
+
+    <section class="wrap case-film" id="film">
+      <div class="film reveal">
+        <video src="presentation.mp4" poster="poster.jpg" controls playsinline preload="metadata" width="1920" height="1080"></video>
+      </div>
+      <p class="mono case-cap">The full presentation, 1:24 · four flows: find, apply, found, help</p>
+    </section>
+
+    <section class="wrap" id="idea">
+      <p class="eyebrow reveal">(01) The idea</p>
+      <h2 class="title reveal-words">One app, <em>three ways to help a pet.</em></h2>
+      <div class="split">
+        <p class="body reveal">Shelters are full, and people who want a pet rarely know which one fits their life. Hoomie asks a few quick questions about home, time and routine, then ranks shelter animals by how well they fit. People who can't adopt yet can support a specific pet's care, and anyone who finds a lost animal can report it in three steps.</p>
+        <dl class="facts">
+          <div class="reveal"><dt class="mono">Adopt</dt><dd>Quiz, match score, profile, application with a status timeline</dd></div>
+          <div class="reveal"><dt class="mono">Help</dt><dd>Donate to one pet's care and see exactly where it goes</dd></div>
+          <div class="reveal"><dt class="mono">Found a pet</dt><dd>Photo, place on a live map, what help is needed</dd></div>
+        </dl>
+      </div>
+      <figure class="slide reveal">
+        <img src="08-three-paths.jpg" alt="Five Hoomie screens: onboarding, matches, home, saved animals and profile" width="1920" height="1080" loading="lazy">
+      </figure>
+    </section>
+
+    <section class="wrap" id="flow">
+      <p class="eyebrow reveal">(02) The flow</p>
+      <h2 class="title reveal-words">From first question <em>to a shelter visit.</em></h2>
+
+      <figure class="slide reveal">
+        <img src="01-home-fits.jpg" alt="Onboarding screen: Find a friend who fits your life" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">01 · Onboarding</span>A friendly start that says straight away what the app is for.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="02-quiz.jpg" alt="Quiz screens with one question each" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">02 · Quiz</span>One question per screen, big answer cards, nothing pre-selected, with short facts and reviews between questions.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="03-matching.jpg" alt="Matching screen with progress and a mini game" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">03 · Matching</span>While the app ranks pets, a small bone-catching game turns the wait into something fun.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="04-ranked.jpg" alt="Home screen with pets ranked by match" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">04 · Home</span>Pets ranked by how well they fit, with a clear match score on every card.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="05-adopt.jpg" alt="Filters, pet profile and application status screens" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">05 · Adoption</span>Filters, a profile with health and personality, and an application with a status timeline and the shelter on a map.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="06-help-found.jpg" alt="Support a pet and report a found pet screens" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">06 · Help and found a pet</span>Support a specific pet's care, or report a found animal: photo, place on the map, what help it needs.</figcaption>
+      </figure>
+      <figure class="slide reveal">
+        <img src="07-treat-run.jpg" alt="Treat Run game: 50 bones equal one real meal" width="1920" height="1080" loading="lazy">
+        <figcaption><span class="mono">07 · Treat Run</span>A full-screen game for the wait. Every 50 bones become a real meal for a shelter pet.</figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap" id="build">
+      <p class="eyebrow reveal">(03) Built, not just drawn</p>
+      <h2 class="title reveal-words">A working app <em>on a real phone.</em></h2>
+      <div class="split">
+        <p class="body reveal">I designed the screens, UI kit and mascots in Figma, then built the app myself. It runs on iOS and Android through Expo Go, with a live map, location, photo upload and haptics. Everything is saved on the device, so it works without a server.</p>
+        <dl class="facts">
+          <div class="reveal"><dt class="mono">Stack</dt><dd>Expo, React Native, TypeScript</dd></div>
+          <div class="reveal"><dt class="mono">Navigation</dt><dd>Expo Router</dd></div>
+          <div class="reveal"><dt class="mono">Native</dt><dd>Maps, location, image picker, haptics</dd></div>
+          <div class="reveal"><dt class="mono">Design</dt><dd>Figma UI kit and component storybook</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="wrap case-next">
+      <p class="eyebrow">Next project</p>
+      <a class="case-next-link" href="https://iravorobchuk3004.github.io/uahub-redesign/" target="_blank" rel="noopener">UAHUB <span class="arr">↗</span></a>
+      <div class="actions">
+        <a class="btn btn-line" href="../../#work">All work</a>
+        <a class="btn btn-dark" href="../../#contact">Start a project <span class="arr">↗</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p class="eyebrow">Have a project in mind? Write to me.</p>
+    <a class="big-mail" href="mailto:iryna.webdesign@gmail.com">iryna.webdesign@gmail.com</a>
+    <div class="socials">
+      <a href="https://www.linkedin.com/in/iryna-vorobchuk-7a0894409/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://www.instagram.com/iryna.vorobchuk/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://github.com/iravorobchuk3004" target="_blank" rel="noopener">GitHub</a>
+      <a href="../../">Home</a>
+    </div>
+    <p class="small">© 2026 Iryna Vorobchuk</p>
+  </footer>
+
+  <script src="../../app.js?v=11"></script>
+</body>
+</html>

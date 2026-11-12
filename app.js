@@ -35,7 +35,7 @@ const io = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal, .reveal-words').forEach((el) => io.observe(el));
 
 // Menu
-const btns = document.querySelectorAll('.menu-btn');
+const btns = document.querySelectorAll('button.menu-btn');
 const menu = document.getElementById('menu');
 const setMenu = (open) => {
   menu.hidden = !open;
@@ -49,14 +49,17 @@ const setMenu = (open) => {
 btns.forEach((b) => b.addEventListener('click', () => setMenu(menu.hidden)));
 
 // The fixed header appears once the hero is out of view
-new IntersectionObserver(([e]) => {
-  document.body.classList.toggle('past-hero', !e.isIntersecting);
-}, { rootMargin: '-80px 0px 0px 0px' }).observe(document.querySelector('.hero'));
-menu.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
-document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && !menu.hidden) setMenu(false); });
+const hero = document.querySelector('.hero');
+if (hero) {
+  new IntersectionObserver(([e]) => {
+    document.body.classList.toggle('past-hero', !e.isIntersecting);
+  }, { rootMargin: '-80px 0px 0px 0px' }).observe(hero);
+}
+menu?.addEventListener('click', (e) => { if (e.target.closest('a')) setMenu(false); });
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape' && menu && !menu.hidden) setMenu(false); });
 
 // Contact form: no backend, so open the visitor's mail app with the message filled in
-document.getElementById('form').addEventListener('submit', (e) => {
+document.getElementById('form')?.addEventListener('submit', (e) => {
   e.preventDefault();
   const d = new FormData(e.target);
   const subject = `${d.get('need')} — ${d.get('name')}`;

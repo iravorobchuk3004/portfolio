@@ -272,3 +272,41 @@ body:not(.past-hero):not(.menu-open) .top { opacity: 0; transform: translateY(-1
   .foot { margin-top: 112px; }
   .big-mail { font-size: 28px; word-break: break-all; }
 }
+
+/* Case study pages */
+.case-hero.wrap { padding-top: 22vh; }
+.case-hero .display { font-size: clamp(64px, 14vw, 200px); margin-bottom: 24px; }
+.case-meta {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px;
+  margin: 72px 0 0; padding-top: 20px; border-top: 1px solid var(--line);
+}
+.case-meta dt { margin-bottom: 6px; }
+.case-meta dd { margin: 0; font-size: 17px; letter-spacing: -0.01em; }
+section.case-film { padding-top: 64px; }
+.film { overflow: hidden; border-radius: 12px; background: #e9e6f7; }
+.film video { display: block; width: 100%; height: auto; }
+.case-cap { margin: 14px 0 0; }
+.slide { margin: 64px 0 0; }
+.slide img { width: 100%; height: auto; border-radius: 12px; background: var(--panel); }
+.slide figcaption { display: grid; grid-template-columns: 220px 1fr; gap: 24px; margin-top: 18px; max-width: 900px; font-size: 18px; letter-spacing: -0.01em; color: var(--muted); }
+.slide figcaption .mono { padding-top: 4px; color: var(--ink); }
+#idea .split { margin-bottom: 0; }
+.case-next-link {
+  display: inline-flex; align-items: baseline; gap: 16px; margin: 12px 0 40px;
+  font-size: clamp(56px, 11vw, 160px); font-weight: 500; letter-spacing: -0.05em; line-height: 1;
+  transition: color 0.2s;
+}
+.case-next-link:hover { color: var(--muted); }
+.case-next-link .arr { font-size: 0.4em; }
+.case-next .actions { margin-top: 0; }
+@media (max-width: 900px) {
+  .case-meta { grid-template-columns: 1fr 1fr; }
+  .slide figcaption { grid-template-columns: 1fr; gap: 6px; }
+}
+@media (max-width: 640px) {
+  .case-hero.wrap { padding-top: 120px; }
+  .case-meta { margin-top: 48px; }
+  .slide { margin-top: 40px; }
+  .slide img, .film { border-radius: 8px; }
+  .slide figcaption { font-size: 16px; }
+}
