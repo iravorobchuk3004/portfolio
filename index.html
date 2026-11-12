@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=8">
+  <link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
   <header class="top">
@@ -39,14 +39,21 @@
       <!-- Two copies of the name: dark on the paper, light on the photo, split at the seam -->
       <div class="hero-name" aria-hidden="true">
         <div class="hero-name-in">
-          <span class="tag">UX/UI designer · 2026</span>
+          <span class="tag"><span class="tag-a">UX/UI designer · 2026</span><span class="tag-b">Open to new projects ↗</span></span>
           <p class="name">Iryna<br>Vorobchuk</p>
         </div>
       </div>
       <div class="hero-name on-photo" aria-hidden="true">
         <div class="hero-name-in">
-          <span class="tag">UX/UI designer · 2026</span>
+          <span class="tag"><span class="tag-a">UX/UI designer · 2026</span><span class="tag-b">Open to new projects ↗</span></span>
           <p class="name">Iryna<br>Vorobchuk</p>
+        </div>
+      </div>
+      <!-- Invisible copy that catches the hover/click for the label above both visible copies -->
+      <div class="hero-name hero-hit">
+        <div class="hero-name-in">
+          <a class="tag" href="#contact"><span class="tag-a">UX/UI designer · 2026</span><span class="tag-b">Open to new projects ↗</span></a>
+          <p class="name" aria-hidden="true">Iryna<br>Vorobchuk</p>
         </div>
       </div>
       <h1 class="sr-only">Iryna Vorobchuk, UX/UI designer</h1>

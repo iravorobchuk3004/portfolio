@@ -148,6 +148,18 @@ section.wrap { padding-top: 160px; scroll-margin-top: -64px; }
 .on-photo .name { color: rgba(255, 255, 255, 0.94); text-shadow: 0 2px 30px rgba(0, 0, 0, 0.12); }
 .on-photo .tag { background: rgba(245, 243, 239, 0.92); color: var(--ink); }
 
+/* Label: two lines of text in one cell, the second rolls in on hover */
+.tag { display: inline-grid; overflow: hidden; transition: background 0.4s var(--ease), color 0.4s var(--ease); }
+.tag-a, .tag-b { grid-area: 1 / 1; text-align: center; transition: transform 0.5s var(--ease), opacity 0.5s var(--ease); }
+.tag-b { transform: translateY(110%); opacity: 0; }
+.hero:has(.hero-hit .tag:hover) .tag-a { transform: translateY(-110%); opacity: 0; }
+.hero:has(.hero-hit .tag:hover) .tag-b { transform: none; opacity: 1; }
+/* on hover the split label turns into one solid pill */
+.hero:has(.hero-hit .tag:hover) .tag { background: var(--ink); color: var(--bg); }
+.hero-hit { clip-path: none; z-index: 4; }
+.hero-hit .name, .hero-hit .tag { visibility: hidden; }
+.hero-hit .tag { visibility: visible; opacity: 0; pointer-events: auto; cursor: pointer; }
+
 .hero-foot {
   position: absolute; left: var(--gutter); bottom: 28px; z-index: 3;
   width: calc(var(--seam) - var(--gutter) * 2);
