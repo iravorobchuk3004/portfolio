@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=3">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <header class="top">
@@ -24,19 +24,53 @@
   </nav>
 
   <main id="top">
-    <section class="hero wrap">
-      <div class="hero-text">
-        <p class="eyebrow reveal">Portfolio — 2026</p>
-        <h1 class="display reveal-words">Iryna Vorobchuk</h1>
-        <p class="lead reveal">UX/UI designer. I design in Figma and then build what I design, so the apps, landings and websites in my portfolio are real and clickable, not just mockups.</p>
-        <div class="actions reveal">
-          <a class="btn btn-dark" href="#contact">Start a project <span class="arr">↗</span></a>
-          <a class="btn btn-line" href="#work">See the work <span class="arr">↗</span></a>
-        </div>
-      </div>
-      <figure class="portrait reveal">
+    <section class="hero">
+      <div class="hero-paper"></div>
+      <figure class="hero-photo">
         <img src="img/iryna.jpg" alt="Iryna Vorobchuk" width="900" height="1200">
       </figure>
+
+      <a href="#top" class="hero-mark" aria-label="Iryna Vorobchuk">IV</a>
+      <div class="hero-cta">
+        <a class="pill pill-dark" href="#contact">Start a project</a>
+        <button class="pill pill-glass menu-btn" aria-expanded="false" aria-controls="menu">Menu</button>
+      </div>
+
+      <!-- Two copies of the name: dark on the paper, light on the photo, split at the seam -->
+      <div class="hero-name" aria-hidden="true">
+        <div class="hero-name-in">
+          <span class="tag">UX/UI designer · 2026</span>
+          <p class="name">Iryna<br>Vorobchuk</p>
+        </div>
+      </div>
+      <div class="hero-name on-photo" aria-hidden="true">
+        <div class="hero-name-in">
+          <span class="tag">UX/UI designer · 2026</span>
+          <p class="name">Iryna<br>Vorobchuk</p>
+        </div>
+      </div>
+      <h1 class="sr-only">Iryna Vorobchuk, UX/UI designer</h1>
+
+      <div class="hero-foot">
+        <div class="hero-social">
+          <a href="https://www.instagram.com/iryna.vorobchuk/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"/></svg></a>
+          <a href="https://www.linkedin.com/in/iryna-vorobchuk-7a0894409/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a>
+          <a href="https://github.com/iravorobchuk3004" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a>
+        </div>
+        <div class="hero-bottom">
+          <p>I design in Figma and then build what I design: real, clickable apps and websites.</p>
+          <a class="dotted" href="mailto:iryna.webdesign@gmail.com">iryna.webdesign@gmail.com</a>
+          <a class="mono" href="#work">See the work ↓</a>
+        </div>
+      </div>
+
+      <a class="hero-card" href="https://github.com/iravorobchuk3004/4-paws" target="_blank" rel="noopener">
+        <img src="img/hoomie.jpg?v=2" alt="" width="1440" height="900">
+        <div>
+          <span class="hero-card-top">Latest project <span class="hero-card-arr">↗</span></span>
+          <span class="hero-card-text">Hoomie, a pet adoption app designed in Figma and built in React Native</span>
+        </div>
+      </a>
     </section>
 
     <section class="work wrap" id="work">
@@ -136,6 +170,6 @@
     <p class="small">© 2026 Iryna Vorobchuk</p>
   </footer>
 
-  <script src="app.js?v=3"></script>
+  <script src="app.js?v=4"></script>
 </body>
 </html>
